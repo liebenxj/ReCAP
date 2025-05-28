@@ -1,0 +1,26 @@
+torch
+torchmetrics
+timm
+einops
+scipy
+matplotlib
+pytorch-lightning
+omegaconf
+accelerate
+diffusers
+huggingface-hub
+safetensors
+ftfy
+gdown
+loguru
+tensorboard
+tqdm
+numpy
+Pillow
+pyyaml
+opencv-python
+albumentations
+imageio
+imageio-ffmpeg
+transformers
+-e git+https://github.com/LTH14/torch-fidelity.git@5746b7685c505fe3cb8ef0895c93b0d5f21f8b7d#egg=torch_fidelity

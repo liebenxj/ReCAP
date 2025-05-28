@@ -1,0 +1,5 @@
+accelerate launch --main_process_port 29500 --num_processes 8 --multi_gpu cache_decoding.py --eval_n 50000 --conf_temp 5.5 --samp_temp 0.75 --gen_step 32 --pre_full_iters 12 --num_cache_iters 1  
+accelerate launch --main_process_port 29500 --num_processes 8 --multi_gpu cache_decoding.py --eval_n 50000 --conf_temp 5.5 --samp_temp 0.72 --gen_step 24 --pre_full_iters 10 --num_cache_iters 1  
+accelerate launch --main_process_port 29500 --num_processes 8 --multi_gpu cache_decoding.py --eval_n 50000 --conf_temp 5.5 --samp_temp 0.68 --gen_step 20 --pre_full_iters 10 --num_cache_iters 1  
+accelerate launch --main_process_port 29500 --num_processes 8 --multi_gpu cache_decoding.py --eval_n 50000 --conf_temp 5.5 --samp_temp 0.65 --gen_step 16 --pre_full_iters 8 --num_cache_iters 1  
+accelerate launch --main_process_port 29500 --num_processes 8 --multi_gpu cache_decoding.py --eval_n 50000 --conf_temp 5.5 --samp_temp 0.65 --gen_step 16 --pre_full_iters 0 --num_cache_iters 1  

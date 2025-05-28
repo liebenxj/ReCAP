@@ -1,0 +1,6 @@
+*.npz
+*.ckpt
+*.pth
+*.pt
+*.pkl
+*.log

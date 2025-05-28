@@ -1,0 +1,13 @@
+nnet:
+  img_size: 16
+  codebook_size: 1024
+  embed_dim: 768
+  depth: 24
+  num_heads: 8
+  mlp_ratio: 4
+  qkv_bias: False
+  num_classes: 1001
+  use_checkpoint: False
+  skip: True
+  pretrained_path: 'ckpts/nnet_ema.pth'
+
