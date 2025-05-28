@@ -1,4 +1,4 @@
-
+# Plug-and-Play Context Feature Reuse for Efficient Masked Generation
 Official PyTorch Implementation of [Plug-and-Play Context Feature Reuse for Efficient
 Masked Generation](https://arxiv.org/abs/2505.19089) (ReCAP).
 
