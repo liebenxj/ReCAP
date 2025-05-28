@@ -8,9 +8,9 @@ ReCAP provides an efficient KV-caching mechanism for accelerating the inference 
 
 ![ReCAP Overview](figs/method.jpg)
 
-## 🔥 News
+<!-- ## 🔥 News
 - [2024/05/27] The paper is released!
-- [2024/05/28] The code is released!
+- [2024/05/28] The code is released! -->
 
 
 ## 🛠️ Environment Setup
