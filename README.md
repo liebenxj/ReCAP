@@ -4,9 +4,9 @@ Masked Generation](https://arxiv.org/abs/2505.19089) (ReCAP).
 
 
 ## 🚀 Overview
-ReCAP provides an efficient KV-caching mechanism for accelerating the inference of Masked Generative Models (MGMs) with bidirectional attention, achieving up to 3.2× speedup with negligible quality loss. It is compatible with popular MGM framework such as [MaskGIT](https://arxiv.org/abs/2202.04200) and [MAR](https://arxiv.org/abs/2406.11838).
+ReCAP provides an efficient KV-caching mechanism for accelerating the inference of Masked Generative Models (MGMs) with bidirectional attention, achieving up to **3.2×** speedup with negligible quality loss. It is compatible with popular MGM framework such as [MaskGIT](https://arxiv.org/abs/2202.04200) and [MAR](https://arxiv.org/abs/2406.11838).
 
-![ReCAP Overview](figs/method.pdf)
+![ReCAP Overview](figs/method.jpg)
 
 ## 🔥 News
 - [2024/05/27] The paper is released!
@@ -44,10 +44,8 @@ bash run_mar_recap.sh
 
 ### 📊 Calculate FID/IS
 1. Download the [FID-stats](https://drive.google.com/file/d/1C7DgARuZi9-InTYOgpkE3pggkJB6DMZD/view?usp=drive_link) to `assets/fid_stats/imagenet256_guided_diffusion.npz`.
-2. 
-```bash
-python eval_metrics.py
-```
+2. Run the script `eval_metrics.py`
+
 
 
 ## 📄 Citation
