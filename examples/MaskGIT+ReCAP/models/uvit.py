@@ -12,16 +12,12 @@ from loguru import logger
 
 
 
-
-if hasattr(torch.nn.functional, 'scaled_dot_product_attention'):
-    ATTENTION_MODE = 'flash'
-else:
-    try:
-        import xformers
-        import xformers.ops
-        ATTENTION_MODE = 'xformers'
-    except:
-        ATTENTION_MODE = 'math'
+try:
+    import xformers
+    import xformers.ops
+    ATTENTION_MODE = 'xformers'
+except:
+    ATTENTION_MODE = 'math'
 
 
 class BertEmbeddings(nn.Module):

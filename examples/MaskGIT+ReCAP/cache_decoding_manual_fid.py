@@ -47,7 +47,7 @@ def get_args():
     parser.add_argument("--output_dir", type=str, default="output")
     parser.add_argument("--seed", type=int, default=1234)
     parser.add_argument("--benchmark", type=int, default=0)
-    parser.add_argument("--test_bsz", type=int, default=64)
+    parser.add_argument("--test_bsz", type=int, default=28)
     parser.add_argument("--gen_step", type=int, default=8)
     parser.add_argument("--cfg", action="store_true", default=False)
     parser.add_argument("--pre_full_iters", type=int, default=0)
@@ -247,9 +247,6 @@ def decode(config, args):
                 unmask_idx = sorted_idx[:, :ntoken]
                 cached_idx = sorted_idx[:, ntoken:]
 
-                if len(local_ntoken_schedule) == 1:
-                    x[batch_range, unmask_idx] = x_sampled[batch_range, unmask_idx]
-                    continue
 
                 local_x = torch.full((labels.shape[0], ntoken), mask_ind, dtype=torch.long, device=device)
                 local_logits = logits[batch_range, unmask_idx]

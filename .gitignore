@@ -4,3 +4,8 @@
 *.pt
 *.pkl
 *.log
+**/__pycache__/
+*.py[cod]
+*$py.class
+**/output/
+./examples/MaskGIT+ReCAP/cache_decoding_manual_fid_orig.py
