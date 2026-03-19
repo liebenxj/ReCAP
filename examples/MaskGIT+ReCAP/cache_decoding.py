@@ -224,9 +224,6 @@ def decode(config, args):
                 unmask_idx = sorted_idx[:, :ntoken]
                 cached_idx = sorted_idx[:, ntoken:]
 
-                if len(local_ntoken_schedule) == 1:
-                    x[batch_range, unmask_idx] = x_[batch_range, unmask_idx]
-                    continue
 
                 local_x = torch.full((labels.shape[0], ntoken), mask_ind, dtype=torch.long).to(device)
                 local_logits = logits[batch_range, unmask_idx]  
